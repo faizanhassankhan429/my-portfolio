@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Hassan | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111827;
+    }
+
+    header h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #9ca3af;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #0284c7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .btn:hover {
+      background: #0369a1;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #9ca3af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #9ca3af;
+      background: #111827;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Faizan Hassan</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I'm <span>Faizan Hassan</span></h1>
+    <p>
+      First-year B.Tech Computer Science student specializing in
+      Cybersecurity. I am passionate about programming, problem-solving,
+      and building secure digital experiences.
+    </p>
+    <a href="#projects" class="btn">Explore My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a beginner software developer learning C programming,
+      web development, and cybersecurity. My goal is to become
+      a skilled engineer by building projects and continuously learning.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Programming</h3>
+        <p>C programming, problem-solving, and algorithms.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, and beginner JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Cybersecurity</h3>
+        <p>Computer networks, security fundamentals, and ethical learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive website showcasing my skills and projects.</p>
+      </div>
+      <div class="card">
+        <h3>C Programming Projects</h3>
+        <p>Beginner programs and problem-solving exercises in C.</p>
+      </div>
+      <div class="card">
+        <h3>Coming Soon</h3>
+        <p>More projects as I continue learning and developing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/your-profile</p>
+    <a href="mailto:your-email@example.com" class="btn">
+      Send Me an Email
+    </a>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Faizan Hassan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
